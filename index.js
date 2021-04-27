@@ -20,35 +20,37 @@ function distanceTravelledInFeet(startingLocation, endingLocation) {
     return distTravInFeet
 }
 
-// function calculatesFarePrice(distanceTravelledInFeet){
-// if (distanceTravelledInFeet <= 400) {
-//     return (0)
-// } else if (distanceTravelledInFeet >= 400 && distanceTravelledInFeet <= 2000) {
-//     return ((distanceTravelledInFeet - 400) * .02)
-// } else if (distanceTravelledInFeet >= 2000 && distanceTravelledInFeet <= 2500) {
-//     return (25)
-// } else if (distanceTravelledInFeet >= 2500) {
-//     return ('cannot travel that far')
-// }
-// }
+
+function calculatesFarePrice(startingLocation, endingLocation){
+    const distanceInFeet = distanceTravelledInFeet(startingLocation, endingLocation)
+    if (distanceInFeet <= 400) {
+    return (0);
+} else if (distanceInFeet >= 400 && distanceInFeet <= 2000) {
+    return ((distanceInFeet - 400) * .02);
+} else if (distanceInFeet >= 2000 && distanceInFeet <= 2500) {
+    return (25);
+} else if (distanceInFeet >= 2500) {
+    return ('cannot travel that far');
+}
+}
 
 
-function calculatesFarePrice(start, destination){
-    const destinationInt = parseInt(destination)
-    const startInt = parseInt(start)
-    const absValLoc = Math.abs(destinationInt-startInt)
-    const feetInABlk = 264
-    const distTravInFeet = absValLoc * feetInABlk
+// function calculatesFarePrice(start, destination){
+//     const destinationInt = parseInt(destination)
+//     const startInt = parseInt(start)
+//     const absValLoc = Math.abs(destinationInt-startInt)
+//     const feetInABlk = 264
+//     const distTravInFeet = absValLoc * feetInABlk
     
     
-    if (distTravInFeet <= 400) {
-        return (0)
-    } else if (distTravInFeet >= 400 && distTravInFeet <= 2000) {
-        return ((distTravInFeet - 400) * .02)
-    } else if (distTravInFeet >= 2000 && distTravInFeet <= 2500) {
-        return (25)
-    } else if (distTravInFeet >= 2500) {
-        return ('cannot travel that far')
-    }
-    }
+//     if (distTravInFeet <= 400) {
+//         return (0)
+//     } else if (distTravInFeet >= 400 && distTravInFeet <= 2000) {
+//         return ((distTravInFeet - 400) * .02)
+//     } else if (distTravInFeet >= 2000 && distTravInFeet <= 2500) {
+//         return (25)
+//     } else if (distTravInFeet >= 2500) {
+//         return ('cannot travel that far')
+//     }
+//     }
     
