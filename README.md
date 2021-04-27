@@ -15,7 +15,8 @@ First, Scuber's executives want to ensure that Scuber's headquarters is near its
 customers. They would like you to write a function that takes in a pickup
 location for a passenger, and returns the number of blocks from its headquarters
 on 42nd Street. For example, if the pickup location is `50` (i.e., 50th Street),
-the return value should be `8`. The function's return value can then be used for
+the return value shribe statement, `describe('distanceFromHqInBlocks()',
+function()`, lould be `8`. The function's return value can then be used for
 another function that translates the number of blocks from headquarters to the
 distance in feet.
 
@@ -35,8 +36,7 @@ It's a bit easier to think through the testing process in steps.
 
 1. The first describe statement, `describe('index.js', function()`, tells us the
 file being tested. Here, it's the `index.js` file.
-2. Our second describe statement, `describe('distanceFromHqInBlocks()',
-function()`, lets us know what the name of our function is. In this case, our
+2. Our second descets us know what the name of our function is. In this case, our
 test is expecting to find a function called `distanceFromHqInBlocks()`.
 3. Our third statement, `it('returns a distance in blocks', function()`, describes
 what our function is doing. In this case, we're going to be calculating some
